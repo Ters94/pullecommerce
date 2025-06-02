@@ -1,14 +1,13 @@
-package com.shop.controller;
+package com.shop.pullecommerce.controller;
 
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-
-import com.shop.model.Category;
-import com.shop.repository.CategoryRepository;
-
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.shop.pullecommerce.model.Category;
+import com.shop.pullecommerce.repository.CategoryRepository;
 
 
 @Controller
@@ -23,7 +22,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         List<Category> categoryList = categoryRepository.findAll();
-        model.addAttribute("categorieList", categoryList);
+        model.addAttribute("categoryList", categoryList);
         return "home";
     }
     

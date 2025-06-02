@@ -1,4 +1,4 @@
-package com.shop.model;
+package com.shop.pullecommerce.model;
 
 import java.util.List;
 
@@ -16,5 +16,5 @@ public class Category {
     private String name;
 
 @OneToMany(mappedBy = "category")
-private List<Product>products;
+private List<Product>productList;
 }

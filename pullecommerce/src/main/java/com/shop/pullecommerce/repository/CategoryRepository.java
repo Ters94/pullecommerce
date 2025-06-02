@@ -1,8 +1,8 @@
-package com.shop.repository;
+package com.shop.pullecommerce.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.shop.model.Category;
+import com.shop.pullecommerce.model.Category;
 
 public interface CategoryRepository extends JpaRepository<Category, Long>{
 

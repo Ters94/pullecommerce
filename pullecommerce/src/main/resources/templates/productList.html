@@ -1,0 +1,7 @@
+<h2>Liste des Produits</h2>
+<ul>
+  <li th:each="prod : ${productList}">
+    <a th:href="@{'/product/' + ${prod.id}}"
+       th:text="${prod.name}">Nom du produit</a>
+  </li>
+</ul>
